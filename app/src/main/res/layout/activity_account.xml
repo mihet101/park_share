@@ -1,9 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccountActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="6dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/TextViewMyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/titleText"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Logout"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/line"
+        android:background="@color/purple"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/ic_email" />
+
+    <TextView
+        android:id="@+id/TextViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="sans-serif"
+        android:text="Username:     "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_password" />
+
+    <TextView
+        android:id="@+id/TextViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewUsername"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:text="Password:     "
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/StringUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginTop="75dp"
+        android:layout_toRightOf="@id/TextViewUsername"
+        android:text="Mihet101"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/StringPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StringUsername"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/TextViewPassword"
+        android:editable="false"
+        android:text="ABC123"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        tools:ignore="Deprecated" />
+
+    <Button
+        android:id="@+id/ButtonResetUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/StringPassword"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="25dp"
+        android:background="@color/purple"
+        android:text="Reset Username" />
+
+    <Button
+        android:id="@+id/ButtonResetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/StringPassword"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/ButtonResetUsername"
+        android:background="@color/purple"
+        android:text="RESET PASSWORD" />
+
+
+
+</RelativeLayout>
