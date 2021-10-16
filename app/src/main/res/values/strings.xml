@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">ParkShare</string>
+    <string name="app_name">MyAccountActivity</string>
+    <string name="titleText">My Account</string>
+    <string name="dialogPassText">Update Password</string>
+    <string name="currentpass_hint">Current Password</string>
+    <string name="newpass_hint">New Password</string>
+    <string name="updatePass">Update Password</string>
+    <string name="dialogUserText">Update Username</string>
+    <string name="currentuser_hint">Current Username</string>
+    <string name="newuser_hint">New Username</string>
+    <string name="updateUser">Update Username</string>
 </resources>

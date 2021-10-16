@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".AccountActivity">
 
     <LinearLayout
         android:id="@+id/line"
@@ -38,6 +38,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="45dp"
+            android:layout_gravity="right"
             android:text="Logout"/>
 
     </LinearLayout>
@@ -109,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/StringUsername"
         android:layout_marginTop="25dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
         android:layout_toRightOf="@id/TextViewPassword"
         android:editable="false"
         android:text="ABC123"
@@ -122,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@id/StringPassword"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="25dp"
         android:background="@color/purple"
         android:text="Reset Username" />
@@ -132,11 +133,26 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@id/StringPassword"
-        android:layout_marginTop="75dp"
-        android:layout_marginLeft="25dp"
         android:layout_toRightOf="@id/ButtonResetUsername"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"
         android:background="@color/purple"
-        android:text="RESET PASSWORD" />
+        android:text="RESET PASSWORD" />S
+
+    <!--<ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/StringPassword"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/rounded_edittext" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StringPassword"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint = "@color/black"
+        android:maxLength="115" />-->
 
 
 
