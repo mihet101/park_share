@@ -9,4 +9,9 @@
     <string name="currentuser_hint">Current Username</string>
     <string name="newuser_hint">New Username</string>
     <string name="updateUser">Update Username</string>
+    <string name="buttonLogout">Logout</string>
+    <string name="textViewUsername">Username:</string>
+    <string name="textViewPassword">Password:</string>
+    <string name="buttonResetUser">Reset Username</string>
+    <string name="buttonResetPass">Reset Password</string>
 </resources>

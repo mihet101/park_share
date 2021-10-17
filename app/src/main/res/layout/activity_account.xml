@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_gravity="right"
-            android:text="Logout"/>
+            android:text="@string/buttonLogout"/>
 
     </LinearLayout>
 
@@ -67,7 +67,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="75dp"
         android:fontFamily="sans-serif"
-        android:text="Username:     "
+        android:text="@string/textViewUsername"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -87,7 +87,7 @@
         android:layout_below="@+id/TextViewUsername"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
-        android:text="Password:     "
+        android:text="@string/textViewPassword"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -98,7 +98,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/line"
-        android:layout_marginTop="75dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="80dp"
         android:layout_toRightOf="@id/TextViewUsername"
         android:text="Mihet101"
         android:textColor="@color/black"
@@ -109,8 +110,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/StringUsername"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="23dp"
         android:layout_toRightOf="@id/TextViewPassword"
         android:editable="false"
         android:text="ABC123"
@@ -126,7 +127,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginLeft="25dp"
         android:background="@color/purple"
-        android:text="Reset Username" />
+        android:text="@string/buttonResetUser" />
 
     <Button
         android:id="@+id/ButtonResetPassword"
@@ -137,7 +138,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginLeft="25dp"
         android:background="@color/purple"
-        android:text="RESET PASSWORD" />S
+        android:text="@string/buttonResetPass" />S
 
     <!--<ImageView
         android:layout_width="fill_parent"
